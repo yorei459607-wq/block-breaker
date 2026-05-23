@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="ブラウザですぐ遊べるシングルプレイのブロック崩しゲーム。3つのレベルと4種類のアイテムを搭載。"
+  >
+  <meta name="theme-color" content="#08111f">
+  <meta property="og:title" content="Block Breaker">
+  <meta
+    property="og:description"
+    content="リンクを開くだけで遊べるブラウザ版ブロック崩しゲーム。"
+  >
+  <meta property="og:type" content="website">
+  <title>Block Breaker</title>
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hud-panel">
+      <div class="brand">
+        <p class="eyebrow">Single Player Browser Game</p>
+        <h1>Block Breaker</h1>
+      </div>
+      <div class="stats" aria-label="ゲーム情報">
+        <div class="stat-card">
+          <span class="label">LEVEL</span>
+          <strong id="levelValue">1</strong>
+        </div>
+        <div class="stat-card">
+          <span class="label">LIFE</span>
+          <strong id="lifeValue">3</strong>
+        </div>
+        <div class="stat-card">
+          <span class="label">SCORE</span>
+          <strong id="scoreValue">0</strong>
+        </div>
+      </div>
+      <div class="status-row">
+        <span id="statusBadge" class="status-badge">TITLE</span>
+        <div id="effectList" class="effect-list" aria-live="polite"></div>
+      </div>
+      <div class="legend">
+        <p>Move: ← → or A / D</p>
+        <p>Start / Resume: Space</p>
+        <p>Pause: P</p>
+        <p>Restart: R</p>
+      </div>
+    </section>
+    <section class="game-panel">
+      <canvas
+        id="gameCanvas"
+        width="960"
+        height="600"
+        aria-label="ブロックくずしゲーム画面"
+      ></canvas>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

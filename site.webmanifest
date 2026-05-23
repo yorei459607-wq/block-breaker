@@ -1,0 +1,10 @@
+{
+  "name": "Block Breaker",
+  "short_name": "Block Breaker",
+  "description": "ブラウザで遊べるシングルプレイのブロック崩しゲーム",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#08111f",
+  "lang": "ja"
+}
